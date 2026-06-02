@@ -1,24 +1,23 @@
 {
   "name": "Bagisgrillen",
   "short_name": "Bagisgrillen",
-  "description": "Bagisgrillen i Bagarmossen. Meny, öppettider och kontakt.",
-  "start_url": "./index.html",
-  "scope": "./",
+  "description": "Bagisgrillen i Bagarmossen.",
+  "start_url": "/Bagisgrillen/index.html",
+  "scope": "/Bagisgrillen/",
   "display": "standalone",
-  "background_color": "#050505",
-  "theme_color": "#050505",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "orientation": "portrait",
   "icons": [
-  {
-    "src": "icon-192.png",
-    "sizes": "192x192",
-    "type": "image/png",
-    "purpose": "any maskable"
-  },
-  {
-    "src": "icon-512.png",
-    "sizes": "512x512",
-    "type": "image/png",
-    "purpose": "any maskable"
-  }
+    {
+      "src": "/Bagisgrillen/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Bagisgrillen/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
+}
