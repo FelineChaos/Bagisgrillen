@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #000000;
+  background: #000;
   color: var(--text);
   padding-bottom: 80px;
 }
