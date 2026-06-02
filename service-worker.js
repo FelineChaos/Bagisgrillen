@@ -1,4 +1,4 @@
-const CACHE_NAME = "bagisgrillen-v2";
+const CACHE_NAME = "bagisgrillen-v99";
 
 self.addEventListener("install", event => {
   self.skipWaiting();
