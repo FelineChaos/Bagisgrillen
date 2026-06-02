@@ -30,60 +30,95 @@ a {
 }
 
 .hero {
+  min-height: 100vh;
   text-align: center;
-  padding: 28px 16px 18px;
+  padding: 34px 18px 120px;
+  background:
+    radial-gradient(circle at top center, rgba(212,175,55,.22), transparent 38%),
+    linear-gradient(#050505, #000);
 }
 
 .logo {
-  width: min(90%, 360px);
-  margin: 0 auto 10px;
+  width: min(92%, 430px);
+  margin: 0 auto 28px;
   display: block;
+  filter: drop-shadow(0 0 35px rgba(212,175,55,.35));
 }
 
 .since {
   color: var(--gold2);
-  letter-spacing: 4px;
-  font-weight: 800;
-  font-size: 13px;
+  letter-spacing: 6px;
+  font-weight: 900;
+  font-size: 16px;
+  margin: 10px 0 24px;
+  position: relative;
+}
+
+.since::before,
+.since::after {
+  content: "";
+  display: inline-block;
+  width: 55px;
+  height: 1px;
+  background: var(--gold);
+  vertical-align: middle;
+  margin: 0 14px;
 }
 
 h1 {
-  font-size: 24px;
-  margin: 14px 0 6px;
+  font-size: clamp(30px, 8vw, 54px);
+  line-height: 1.05;
+  margin: 0 auto 16px;
+  max-width: 900px;
   text-transform: uppercase;
+  font-weight: 950;
+  letter-spacing: 1px;
 }
 
 .hero p {
-  color: var(--muted);
+  color: #cfcfcf;
+  font-size: clamp(16px, 4vw, 24px);
+  max-width: 760px;
+  margin: 0 auto 34px;
 }
 
 .hero-burger {
-  width: 100%;
-  max-width: 430px;
-  border-radius: 24px;
-  margin: 20px auto;
-  display: block;
-  border: 1px solid rgba(212, 175, 55, 0.45);
-  box-shadow: 0 18px 45px rgba(0,0,0,.6);
+  display: none;
 }
 
 .quick {
+  max-width: 760px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  max-width: 430px;
-  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgba(212,175,55,.85);
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(5,5,5,.82);
+  box-shadow:
+    0 0 35px rgba(212,175,55,.18),
+    inset 0 0 20px rgba(212,175,55,.08);
 }
 
 .quick a,
 .gold-btn {
-  border: 1px solid var(--gold);
-  color: var(--gold2);
-  background: linear-gradient(145deg, #151515, #090909);
-  border-radius: 16px;
-  padding: 16px 10px;
-  font-weight: 800;
+  border: 0;
+  border-right: 1px solid rgba(212,175,55,.45);
+  border-radius: 0;
+  background: transparent;
+  color: #d8d8d8;
+  padding: 22px 8px;
+  font-size: 15px;
+  font-weight: 900;
   display: block;
+}
+
+.quick a:first-child {
+  color: var(--gold2);
+}
+
+.quick a:last-child {
+  border-right: 0;
 }
 
 .info-row {
